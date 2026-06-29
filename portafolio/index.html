@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    SEO BÁSICO — Ayuda a que Google te encuentre y muestre bien
+    📝 REEMPLAZA: ajusta título, descripción y palabras clave
+  ============================================================ -->
+  <title>Manuel Isaac Camaño Díaz — Desarrollador Full Stack Junior</title>
+  <meta name="description" content="Portafolio de Manuel Isaac Camaño Díaz, desarrollador Full Stack Junior con enfoque en automatización, JavaScript y n8n." />
+  <meta name="keywords" content="desarrollador, full stack, junior, javascript, n8n, python, automatización, Colombia" />
+  <meta name="author" content="Manuel Isaac Camaño Díaz" />
+
+  <!-- ============================================================
+    OPEN GRAPH — Cómo se ve el enlace cuando lo compartes en
+    LinkedIn, WhatsApp, Twitter, etc.
+    📸 REEMPLAZA: sube una imagen de 1200x630px a assets/img/
+  ============================================================ -->
+  <meta property="og:title" content="Manuel Isaac Camaño Díaz — Desarrollador Full Stack Junior" />
+  <meta property="og:description" content="Portafolio de Isaac Camaño, desarrollador con enfoque en automatización e IA." />
+  <meta property="og:image" content="assets/img/og-preview.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- ============================================================
+    TIPOGRAFÍAS — Se cargan desde Google Fonts (requiere internet)
+    Inter: tipografía principal limpia y moderna
+    JetBrains Mono: para etiquetas de tecnologías y código
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Hoja de estilos principal (se crea en la Etapa 5) -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ============================================================
+    FAVICON — El ícono pequeño que aparece en la pestaña
+    📸 REEMPLAZA: crea un favicon en https://favicon.io/
+  ============================================================ -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    NAVEGACIÓN PRINCIPAL
+    - Fija en la parte superior mientras el usuario hace scroll
+    - Logo con tus iniciales + enlaces a cada sección
+    - El botón "Contacto" resalta en azul para llamar la atención
+  ============================================================ -->
+  <header class="navbar" role="banner">
+    <nav class="navbar__inner" aria-label="Navegación principal">
+
+      <!-- Logo: tus iniciales como marca personal -->
+      <a href="#inicio" class="navbar__logo" aria-label="Volver al inicio">
+        IC<span class="navbar__logo-dot">.</span>
+      </a>
+
+      <!-- Botón hamburguesa — visible solo en móvil -->
+      <button
+        class="navbar__toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="navbar-menu"
+      >
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <ul class="navbar__menu" id="navbar-menu" role="list">
+        <li><a href="#sobre-mi" class="navbar__link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="navbar__link">Habilidades</a></li>
+        <li><a href="#proyectos" class="navbar__link">Proyectos</a></li>
+        <li>
+          <!-- Botón de contacto destacado -->
+          <a href="#contacto" class="navbar__link navbar__link--cta">Contacto</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ============================================================
+    CONTENIDO PRINCIPAL
+  ============================================================ -->
+  <main id="inicio">
+
+    <!-- ==========================================================
+      SECCIÓN 1: HERO
+      Primera impresión — el reclutador decide aquí si sigue leyendo
+      Contiene: foto, nombre, rol, descripción breve y botones CTA
+    ========================================================== -->
+    <section class="hero" id="hero" aria-label="Presentación">
+      <div class="container">
+
+        <!-- Detalle decorativo de fondo (punto de grilla) -->
+        <div class="hero__bg-grid" aria-hidden="true"></div>
+
+        <div class="hero__content">
+
+          <!-- Foto de perfil
+               📸 REEMPLAZA: pon tu foto en assets/img/foto-perfil.jpg
+               Recomendado: cuadrada, fondo neutro, mínimo 400x400px -->
+          <div class="hero__avatar-wrapper">
+            <img
+              src="assets/img/foto-perfil.jpg"
+              alt="Foto de perfil de Manuel Isaac Camaño Díaz"
+              class="hero__avatar"
+              width="120"
+              height="120"
+            />
+            <!-- Indicador de disponibilidad (punto verde animado) -->
+            <span class="hero__status" aria-label="Disponible para oportunidades"></span>
+          </div>
+
+          <!-- Saludo y nombre -->
+          <p class="hero__greeting">Hola, soy</p>
+          <h1 class="hero__name">Manuel Isaac Camaño Díaz</h1>
+
+          <!-- Rol profesional con texto que cambia (animado en JS) -->
+          <p class="hero__role">
+            Desarrollador
+            <!-- El span es el texto que rotará con JavaScript -->
+            <span class="hero__role-highlight" id="role-text">Full Stack Junior</span>
+          </p>
+
+          <!-- Descripción breve — tu propuesta de valor en 2 líneas
+               📝 REEMPLAZA: ajusta si quieres cambiar el mensaje -->
+          <p class="hero__description">
+            Construyo soluciones que conectan tecnología con problemas reales.
+            Con enfoque en automatización, JavaScript y mucho café. ☕
+          </p>
+
+          <!-- Botones de acción principales -->
+          <div class="hero__actions">
+
+            <!-- CTA principal: lleva a la sección de proyectos -->
+            <a href="#proyectos" class="btn btn--primary">
+              Ver proyectos
+            </a>
+
+            <!-- CTA secundario: descarga el CV
+                 📄 REEMPLAZA: exporta tu CV como PDF y ponlo en assets/cv/
+                 Puedes crearlo gratis en https://www.canva.com/ -->
+            <a
+              href="assets/cv/isaac-camano-cv.pdf"
+              class="btn btn--secondary"
+              download
+              aria-label="Descargar CV de Isaac Camaño en formato PDF"
+            >
+              Descargar CV
+            </a>
+
+          </div>
+
+          <!-- Línea decorativa sutil debajo de los botones -->
+          <div class="hero__divider" aria-hidden="true"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+      SECCIÓN 2: SOBRE MÍ
+      El humano detrás del código — breve, auténtico y sin exagerar
+    ========================================================== -->
+    <section class="section about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container">
+
+        <!-- Etiqueta de sección (número + nombre) -->
+        <div class="section__eyebrow" aria-hidden="true">02 — sobre mí</div>
+
+        <div class="about__grid">
+
+          <!-- Columna izquierda: texto -->
+          <div class="about__text">
+            <h2 class="section__title" id="about-title">¿Quién soy?</h2>
+
+            <!-- 📝 REEMPLAZA: escribe tu presentación personal aquí
+                 Consejo: sé auténtico, no uses frases genéricas como
+                 "apasionado por la tecnología". Cuenta algo real. -->
+            <p class="about__paragraph">
+              Soy estudiante de desarrollo de software en
+              <strong>Campuslands</strong>, Bucaramanga. Me mueve la curiosidad
+              por entender cómo funcionan las cosas y, sobre todo, cómo
+              mejorarlas usando tecnología.
+            </p>
+
+            <p class="about__paragraph">
+              Disfruto diseñar soluciones a problemas reales con 
+              grandes ideas — "si lo puedes imaginar,lo puedes programar" dicen,
+              aplicando mi creatividad y conocimientos pienso facilitar 
+              muchas tareas monotonas para los humanos.
+            </p>
+
+            <p class="about__paragraph">
+              Fuera del código, me gusta planear bien antes de ejecutar.
+              Me gustas siempre entender el todo para saber que hacer con sus partes.
+            </p>
+
+            <!-- Datos rápidos: información visual y escaneable -->
+            <ul class="about__facts" role="list" aria-label="Datos rápidos">
+              <li class="about__fact">
+                <!-- Ícono SVG inline: ubicación -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
+                </svg>
+                Bucaramanga, Colombia
+              </li>
+              <li class="about__fact">
+                <!-- Ícono SVG inline: educación -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                Campuslands — Desarrollo de Software
+              </li>
+              <li class="about__fact">
+                <!-- Ícono SVG inline: disponibilidad -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+                Disponible para prácticas profesionales
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna derecha: imagen/detalle visual
+               📸 REEMPLAZA (opcional): puedes poner una segunda foto
+               o dejarlo como espacio decorativo con CSS -->
+          <div class="about__visual" aria-hidden="true">
+            <div class="about__image-frame">
+              <img
+                src="assets/img/foto-perfil.jpg"
+                alt=""
+                class="about__image"
+                aria-hidden="true"
+              />
+              <!-- Tarjeta flotante con una stat -->
+              <div class="about__stat-card">
+                <span class="about__stat-number">19</span>
+                <span class="about__stat-label">repositorios en GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+      SECCIÓN 3: HABILIDADES
+      Tecnologías que realmente has usado — sin barra de progreso,
+      sin mentiras, con contexto de dónde las aplicaste
+    ========================================================== -->
+    <section class="section skills" id="habilidades" aria-labelledby="skills-title">
+      <div class="container">
+
+        <div class="section__eyebrow" aria-hidden="true">03 — habilidades</div>
+        <h2 class="section__title" id="skills-title">Tecnologías que uso</h2>
+        <p class="section__subtitle">
+          Herramientas con las que he construido proyectos reales.
+        </p>
+
+        <!-- Categorías de habilidades -->
+        <div class="skills__categories">
+
+          <!-- Categoría: Principal / Más usadas -->
+          <div class="skills__category">
+            <h3 class="skills__category-title">Principal</h3>
+            <ul class="skills__list" role="list">
+              <li class="skills__item skills__item--primary">
+                <span class="skills__icon" aria-hidden="true">JS</span>
+                JavaScript
+              </li>
+              <li class="skills__item skills__item--primary">
+                <span class="skills__icon" aria-hidden="true">n8</span>
+                n8n
+              </li>
+              <li class="skills__item skills__item--primary">
+                <span class="skills__icon" aria-hidden="true">Py</span>
+                Python
+              </li>
+              <li class="skills__item skills__item--primary">
+                <span class="skills__icon" aria-hidden="true">Jv</span>
+                Java
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categoría: Frontend -->
+          <div class="skills__category">
+            <h3 class="skills__category-title">Frontend</h3>
+            <ul class="skills__list" role="list">
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">H5</span>
+                HTML5
+              </li>
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">C3</span>
+                CSS3
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categoría: Base de datos -->
+          <div class="skills__category">
+            <h3 class="skills__category-title">Base de datos</h3>
+            <ul class="skills__list" role="list">
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">SQL</span>
+                MySQL
+              </li>
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">GS</span>
+                Google Sheets
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categoría: Herramientas -->
+          <div class="skills__category">
+            <h3 class="skills__category-title">Herramientas</h3>
+            <ul class="skills__list" role="list">
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">Git</span>
+                Git / GitHub
+              </li>
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">AI</span>
+                Prompt Engineering
+              </li>
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">VS</span>
+                Visual Studio Code
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+      SECCIÓN 4: PROYECTOS
+      La sección más importante — aquí demuestras lo que sabes hacer
+      Cada tarjeta tiene: imagen, título, descripción, tags y links
+    ========================================================== -->
+    <section class="section projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+
+        <div class="section__eyebrow" aria-hidden="true">04 — proyectos</div>
+        <h2 class="section__title" id="projects-title">Lo que he construido</h2>
+        <p class="section__subtitle">
+          Proyectos reales, con código real. Sin exagerar.
+        </p>
+
+        <div class="projects__grid">
+
+          <!-- ====================================================
+            PROYECTO 1: DeliveryBot (DESTACADO — va primero)
+          ==================================================== -->
+          <article class="project-card project-card--featured" aria-label="Proyecto DeliveryBot">
+
+            <!-- Imagen del proyecto
+                 📸 REEMPLAZA: haz una captura de pantalla del bot
+                 o del workflow en n8n y ponla en assets/img/ -->
+            <div class="project-card__image-wrapper">
+              <img
+                src="assets/img/proyecto-deliverybot.jpg"
+                alt="Captura de pantalla del workflow de DeliveryBot en n8n"
+                class="project-card__image"
+                loading="lazy"
+              />
+              <!-- Badge de proyecto destacado -->
+              <span class="project-card__badge">Destacado</span>
+            </div>
+
+            <div class="project-card__body">
+
+              <h3 class="project-card__title">DeliveryBot</h3>
+
+              <!-- 📝 REEMPLAZA si quieres cambiar la descripción -->
+              <p class="project-card__description">
+                Bot de Telegram para gestión de pedidos de cafetería, construido
+                con n8n y Google Sheets como base de datos. Incluye flujo de
+                pedidos, validación de horarios de atención, manejo de errores
+                y reportes automáticos.
+              </p>
+
+              <!-- Tecnologías usadas en este proyecto -->
+              <ul class="project-card__tags" role="list" aria-label="Tecnologías usadas">
+                <li class="project-card__tag">n8n</li>
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">Google Sheets</li>
+                <li class="project-card__tag">Telegram API</li>
+              </ul>
+
+              <!-- Links del proyecto -->
+              <div class="project-card__links">
+                <!-- 🔗 REEMPLAZA: pon la URL exacta de tu repo -->
+                <a
+                  href="https://github.com/manuelisaaccamanidiaz-lgtm/Proyecto_DeliveryBot_CamanoDiazManuelIsaac.git"
+                  class="project-card__link project-card__link--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de DeliveryBot en GitHub"
+                >
+                  Ver en GitHub
+                  <!-- Ícono de enlace externo -->
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- ====================================================
+            PROYECTO 2: AcmeBank
+          ==================================================== -->
+          <article class="project-card" aria-label="Proyecto AcmeBank">
+
+            <div class="project-card__image-wrapper">
+              <!-- 📸 REEMPLAZA: captura de pantalla de la plataforma -->
+              <img
+                src="assets/img/proyecto-acmebank.jpg"
+                alt="Captura de pantalla de la plataforma bancaria AcmeBank"
+                class="project-card__image"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-card__body">
+
+              <h3 class="project-card__title">AcmeBank</h3>
+
+              <!-- 📝 REEMPLAZA: ajusta la descripción con más detalles reales -->
+              <p class="project-card__description">
+                Plataforma bancaria web con gestión de cuentas, transacciones
+                y validaciones. Construida con JavaScript vanilla como proyecto
+                de formación en lógica de negocio y manipulación del DOM.
+              </p>
+
+              <ul class="project-card__tags" role="list" aria-label="Tecnologías usadas">
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">HTML5</li>
+                <li class="project-card__tag">CSS3</li>
+              </ul>
+
+              <div class="project-card__links">
+                <!-- 🔗 REEMPLAZA: URL exacta del repo de AcmeBank -->
+                <a
+                  href="https://github.com/manuelisaaccamanidiaz-lgtm/AcmeBank.git"
+                  class="project-card__link project-card__link--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de AcmeBank en GitHub"
+                >
+                  Ver en GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- ====================================================
+            PROYECTO 3: Tienda de Ropa (Frontend)
+          ==================================================== -->
+          <article class="project-card" aria-label="Proyecto tienda de ropa">
+
+            <div class="project-card__image-wrapper">
+              <!-- 📸 REEMPLAZA: captura de la tienda -->
+              <img
+                src="assets/img/proyecto-tienda.jpg"
+                alt="Captura de pantalla del frontend de tienda de ropa"
+                class="project-card__image"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-card__body">
+
+              <h3 class="project-card__title">Tienda de Ropa — Frontend</h3>
+
+              <!-- 📝 REEMPLAZA si quieres agregar más detalle -->
+              <p class="project-card__description">
+                Diseño frontend completo de una tienda de ropa. Proyecto
+                desarrollado de forma independiente, aplicando HTML y CSS
+                para construir una interfaz responsive y funcional.
+              </p>
+
+              <ul class="project-card__tags" role="list" aria-label="Tecnologías usadas">
+                <li class="project-card__tag">HTML5</li>
+                <li class="project-card__tag">CSS3</li>
+              </ul>
+
+              <div class="project-card__links">
+                <!-- 🔗 REEMPLAZA: URL del repo -->
+                <a
+                  href="https://github.com/manuelisaaccamanidiaz-lgtm/Frontend_de_una_tienda_de_ropa.git"
+                  class="project-card__link project-card__link--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de la tienda en GitHub"
+                >
+                  Ver en GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+
+                <!-- Si tienes el proyecto desplegado en GitHub Pages:
+                     📸 REEMPLAZA con la URL de tu demo en vivo
+                     Si no tienes demo, borra este enlace completo -->
+                <a
+                  href="https://manuelisaaccamanidiaz-lgtm.github.io/tienda-ropa"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver demo en vivo de la tienda de ropa"
+                >
+                  Demo en vivo
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- ====================================================
+            TARJETA EXTRA: Enlace al perfil de GitHub
+            No es un proyecto, es una invitación a ver más
+          ==================================================== -->
+          <article class="project-card project-card--ghost" aria-label="Ver más proyectos en GitHub">
+            <a
+              href="https://github.com/manuelisaaccamanidiaz-lgtm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-card__github-link"
+              aria-label="Ver todos los repositorios de Isaac en GitHub"
+            >
+              <!-- Ícono de GitHub en SVG -->
+              <svg class="project-card__github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span class="project-card__github-text">Ver más proyectos</span>
+              <span class="project-card__github-sub">github.com/manuelisaaccamanidiaz-lgtm</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+      SECCIÓN 5: CONTACTO
+      La meta del reclutador — fácil de encontrar, fácil de usar
+    ========================================================== -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="section__eyebrow" aria-hidden="true">05 — contacto</div>
+
+        <div class="contact__inner">
+
+          <h2 class="section__title contact__title" id="contact-title">
+            ¿Hablamos?
+          </h2>
+
+          <!-- 📝 REEMPLAZA: ajusta el mensaje si quieres -->
+          <p class="contact__description">
+            Estoy buscando oportunidades de prácticas profesionales o mi
+            primer empleo. Si tienes un proyecto interesante o una vacante,
+            escríbeme — respondo rápido.
+          </p>
+
+          <!-- Links de contacto -->
+          <div class="contact__links">
+
+            <!-- Email — CTA principal
+                 📧 REEMPLAZA: pon tu correo real aquí -->
+            <a
+              href="mailto:manuelisaaccamanidiaz@gmail.com"
+              class="contact__btn contact__btn--primary"
+              aria-label="Enviar correo a Isaac Camaño"
+            >
+              <!-- Ícono de email -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Enviar email
+            </a>
+
+            <!-- LinkedIn
+                 🔗 REEMPLAZA: pon la URL de tu perfil de LinkedIn
+                 Si no tienes LinkedIn aún, borra este bloque completo -->
+            <a
+              href="www.linkedin.com/in/manuel-isaac-camani-diaz-707006305"
+              class="contact__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver perfil de LinkedIn de Isaac Camaño"
+            >
+              <!-- Ícono de LinkedIn en SVG -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/manuelisaaccamanidiaz-lgtm"
+              class="contact__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver perfil de GitHub de Isaac Camaño"
+            >
+              <!-- Ícono de GitHub en SVG -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              GitHub
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+    FOOTER
+    Parte inferior de la página — simple y limpio
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <!-- Crédito -->
+      <!-- 📝 REEMPLAZA: cambia el año si es necesario -->
+      <p class="footer__text">
+        © 2026 Manuel Isaac Camaño Díaz
+      </p>
+
+      <!-- Nota de tecnología usada (opcional, muéstrate como dev) -->
+      <p class="footer__text footer__text--muted">
+        Construido con HTML, CSS y JS vanilla
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+    JAVASCRIPT
+    El archivo JS se carga al final del body para no bloquear
+    la renderización de la página (buena práctica de rendimiento)
+  ============================================================ -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
