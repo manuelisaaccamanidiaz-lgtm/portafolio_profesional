@@ -8,8 +8,6 @@ Portafolio web personal desarrollado para presentar el perfil profesional, habil
 
 https://manuelisaaccamanidiaz-lgtm.github.io/portafolio_profesional/
 
-> [PENDIENTE] Verificar que esta URL se encuentre actualmente configurada y publicada mediante GitHub Pages.
-
 **Repositorio:**
 
 https://github.com/manuelisaaccamanidiaz-lgtm/portafolio_profesional
@@ -194,8 +192,6 @@ De forma general:
 **Demo:**
 
 https://manuelisaaccamanidiaz-lgtm.github.io/portafolio_profesional/
-
-> [PENDIENTE] Confirmar desde la configuración del repositorio si GitHub Pages ya se encuentra habilitado.
 
 ## 📚 Aprendizajes
 
