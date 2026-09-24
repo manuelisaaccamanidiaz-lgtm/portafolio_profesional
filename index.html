@@ -83,6 +83,16 @@
           <!-- Botón de contacto destacado -->
           <a href="#contacto" class="navbar__link navbar__link--cta">Contacto</a>
         </li>
+        <li>
+          <button
+            class="navbar__language"
+            id="language-toggle"
+            type="button"
+            aria-label="Cambiar a inglés"
+          >
+            EN
+          </button>
+        </li>
       </ul>
 
     </nav>
@@ -189,7 +199,7 @@
                  Consejo: sé auténtico, no uses frases genéricas como
                  "apasionado por la tecnología". Cuenta algo real. -->
             <p class="about__paragraph">
-              Soy estudiante de desarrollo de software en
+              Soy un desarrollador de software
               <strong>Campuslands</strong>, Bucaramanga. Me mueve la curiosidad
               por entender cómo funcionan las cosas y, sobre todo, cómo
               mejorarlas usando tecnología.
@@ -204,7 +214,7 @@
 
             <p class="about__paragraph">
               Fuera del código, me gusta planear bien antes de ejecutar.
-              Me gustas siempre entender el todo para saber que hacer con sus partes.
+              Me gusta siempre entender el todo para saber que hacer con sus partes.
             </p>
 
             <!-- Datos rápidos: información visual y escaneable -->
@@ -249,7 +259,7 @@
               />
               <!-- Tarjeta flotante con una stat -->
               <div class="about__stat-card">
-                <span class="about__stat-number">19</span>
+                <span class="about__stat-number">28</span>
                 <span class="about__stat-label">repositorios en GitHub</span>
               </div>
             </div>
@@ -325,6 +335,10 @@
               <li class="skills__item">
                 <span class="skills__icon" aria-hidden="true">GS</span>
                 Google Sheets
+              </li>
+              <li class="skills__item">
+                <span class="skills__icon" aria-hidden="true">SQL</span>
+                postgreSQL
               </li>
             </ul>
           </div>
@@ -517,7 +531,7 @@
               <div class="project-card__links">
                 <!-- 🔗 REEMPLAZA: URL del repo -->
                 <a
-                  href="https://github.com/manuelisaaccamanidiaz-lgtm/Frontend_de_una_tienda_de_ropa.git"
+                  href="https://github.com/manuelisaaccamanidiaz-lgtm/ecommerce.git"
                   class="project-card__link project-card__link--primary"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -535,11 +549,11 @@
                      📸 REEMPLAZA con la URL de tu demo en vivo
                      Si no tienes demo, borra este enlace completo -->
                 <a
-                  href="https://manuelisaaccamanidiaz-lgtm.github.io/Frontend_de_una_tienda_de_ropa/"
+                  href="https://manuelisaaccamanidiaz-lgtm.github.io/ecommerce/"
                   class="project-card__link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Ver demo en vivo de la tienda de ropa"
+                  aria-label="Ver demo en vivo de ecommerce"
                 >
                   Demo en vivo
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -554,24 +568,57 @@
           </article>
 
           <!-- ====================================================
-            TARJETA EXTRA: Enlace al perfil de GitHub
-            No es un proyecto, es una invitación a ver más
+            SICA proyecto de java para seguimiento de ingreso de personas
           ==================================================== -->
-          <article class="project-card project-card--ghost" aria-label="Ver más proyectos en GitHub">
-            <a
-              href="https://github.com/manuelisaaccamanidiaz-lgtm"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card__github-link"
-              aria-label="Ver todos los repositorios de Isaac en GitHub"
-            >
-              <!-- Ícono de GitHub en SVG -->
-              <svg class="project-card__github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-              <span class="project-card__github-text">Ver más proyectos</span>
-              <span class="project-card__github-sub">github.com/manuelisaaccamanidiaz-lgtm</span>
-            </a>
+          <article class="project-card" aria-label="Proyecto SICA">
+
+            <div class="project-card__image-wrapper">
+              <!-- 📸 REEMPLAZA: nombre de la imagen de tu proyecto -->
+              <img
+                src="assets/img/proyecto-sica.jpg"
+                alt="Captura de pantalla de SICA"
+                class="project-card__image"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-card__body">
+
+              <!-- 📝 REEMPLAZA: nombre de tu repositorio -->
+              <h3 class="project-card__title">proyecto_SICA</h3>
+
+              <!-- 📝 REEMPLAZA: descripción breve del proyecto -->
+              <p class="project-card__description">
+                proyecto basado en java para el seguimiento del ingreso de personas a un establecimiento
+                cuenta con diferentes de usuario, implementacion de persistencia y un visual de SWING
+              </p>
+
+              <ul class="project-card__tags" role="list" aria-label="Tecnologías usadas">
+                <!-- 📝 REEMPLAZA: agrega o elimina las tecnologías necesarias -->
+                <li class="project-card__tag">JAVA</li>
+                <li class="project-card__tag">MySQL</li>
+                <li class="project-card__tag">SWING</li>
+              </ul>
+
+              <div class="project-card__links">
+                <!-- 🔗 REEMPLAZA: URL exacta de tu repositorio -->
+                <a
+                  href="https://github.com/manuelisaaccamanidiaz-lgtm/proyecto_SICA.git"
+                  class="project-card__link project-card__link--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver código de proyecto_SICA en GitHub"
+                >
+                  Ver en GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
           </article>
 
         </div>
@@ -622,7 +669,7 @@
                  🔗 REEMPLAZA: pon la URL de tu perfil de LinkedIn
                  Si no tienes LinkedIn aún, borra este bloque completo -->
             <a
-              href="www.linkedin.com/in/manuel-isaac-camani-diaz-707006305"
+              href="https://www.linkedin.com/in/manuel-isaac-cama%C3%B1o-diaz-707006305/"
               class="contact__btn"
               target="_blank"
               rel="noopener noreferrer"
