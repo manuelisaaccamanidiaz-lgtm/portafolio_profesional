@@ -132,7 +132,7 @@
   const elemento = document.getElementById('role-text');
   if (!elemento) return;
 
-  /* 📝 REEMPLAZA: edita estos textos como quieras */
+  /* REEMPLAZA: edita estos textos como quieras */
   const roles = {
     es: [
       'Full Stack Junior',
@@ -259,7 +259,7 @@
       nav: ['About me', 'Skills', 'Projects', 'Contact'],
       greeting: 'Hi, I am',
       rolePrefix: 'Developer ',
-      heroDescription: 'I build solutions that connect technology with real-world problems. Focused on automation, JavaScript, and plenty of coffee. ☕',
+      heroDescription: 'I build solutions that connect technology with real-world problems. Focused on automation, JavaScript, and plenty of coffee.',
       viewProjects: 'View projects',
       downloadCv: 'Download CV',
       aboutEyebrow: '02 — about me',

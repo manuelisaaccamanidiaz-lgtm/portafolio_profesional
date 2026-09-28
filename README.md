@@ -2,7 +2,7 @@
 
 Portafolio web personal desarrollado para presentar el perfil profesional, habilidades técnicas y proyectos de Manuel Isaac Camaño Díaz.
 
-## 🌐 Demo
+## Demo
 
 **GitHub Pages:**
 
@@ -12,7 +12,7 @@ https://manuelisaaccamanidiaz-lgtm.github.io/portafolio_profesional/
 
 https://github.com/manuelisaaccamanidiaz-lgtm/portafolio_profesional
 
-## 📖 Descripción
+## Descripción
 
 Este proyecto es un portafolio profesional web diseñado para presentar de forma clara y visual el perfil de Manuel Isaac Camaño Díaz como estudiante de Desarrollo de Software en Campuslands.
 
@@ -20,7 +20,7 @@ El sitio reúne información personal y profesional, habilidades técnicas, proy
 
 El repositorio contiene un desarrollo frontend realizado con HTML, CSS y JavaScript vanilla, acompañado de recursos gráficos y documentos profesionales.
 
-## 🎯 Objetivos
+## Objetivos
 
 * Presentar el perfil profesional y académico.
 * Mostrar las habilidades y tecnologías utilizadas.
@@ -29,7 +29,7 @@ El repositorio contiene un desarrollo frontend realizado con HTML, CSS y JavaScr
 * Contar con una carta de presentación digital accesible desde un navegador.
 * Practicar la organización y publicación de un proyecto frontend mediante Git y GitHub.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología       | Uso                                                                                                                                             |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ El repositorio contiene un desarrollo frontend realizado con HTML, CSS y JavaScr
 
 El proyecto no utiliza frameworks frontend como React, Angular, Vue, Bootstrap o Tailwind CSS.
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```text
 portafolio_profesional/
@@ -77,7 +77,7 @@ portafolio_profesional/
 * **`.vscode/`**: contiene la configuración de Live Server utilizada por el proyecto.
 * **`index.html`**: documento principal que contiene la estructura del portafolio.
 
-## 💻 Características del portafolio
+## Características del portafolio
 
 El sitio está organizado en diferentes secciones orientadas a presentar el perfil profesional:
 
@@ -134,7 +134,7 @@ La sección de contacto incluye enlaces para:
 
 También se incluye una tarjeta para consultar más proyectos directamente desde GitHub.
 
-## 🎨 Diseño y experiencia de usuario
+## Diseño y experiencia de usuario
 
 El portafolio utiliza un diseño visual orientado a una presentación profesional, con navegación fija, secciones claramente diferenciadas, tarjetas para los proyectos y elementos visuales de apoyo.
 
@@ -142,7 +142,7 @@ El diseño incluye adaptación para tabletas y dispositivos móviles mediante me
 
 También se implementan animaciones de entrada al desplazarse por la página y cambios visuales en la barra de navegación durante el scroll.
 
-## 📄 Documentos profesionales
+## Documentos profesionales
 
 El repositorio contiene documentos profesionales en formato PDF:
 
@@ -154,7 +154,7 @@ El archivo ubicado en `assets/cv/` está enlazado directamente desde el botón *
 
 Los documentos se mantienen como recursos profesionales del proyecto y no se reproduce aquí información personal contenida en ellos.
 
-## 🚀 Instalación y ejecución local
+## Instalación y ejecución local
 
 Este es un proyecto frontend estático, por lo que no requiere instalación de dependencias mediante npm.
 
@@ -176,7 +176,7 @@ Se puede abrir `index.html` directamente desde el navegador.
 
 También es posible utilizar **Live Server** desde Visual Studio Code. El repositorio incluye una configuración específica para Live Server en `.vscode/settings.json`.
 
-## 🌍 Despliegue en GitHub Pages
+## Despliegue en GitHub Pages
 
 Al tratarse de un proyecto frontend estático con `index.html` como archivo principal, puede desplegarse mediante GitHub Pages.
 
@@ -193,7 +193,7 @@ De forma general:
 
 https://manuelisaaccamanidiaz-lgtm.github.io/portafolio_profesional/
 
-## 📚 Aprendizajes
+## Aprendizajes
 
 El desarrollo de este proyecto permitió trabajar directamente en:
 
@@ -206,7 +206,7 @@ El desarrollo de este proyecto permitió trabajar directamente en:
 * Uso de Git y GitHub para gestionar el código.
 * Presentación de proyectos y habilidades dentro de un perfil profesional.
 
-## 🔮 Mejoras futuras
+## Mejoras futuras
 
 Las siguientes propuestas corresponden a posibles mejoras y **no forman parte de las funcionalidades actuales documentadas**:
 
@@ -218,7 +218,7 @@ Las siguientes propuestas corresponden a posibles mejoras y **no forman parte de
 * Incorporar un formulario de contacto funcional.
 * Añadir nuevas optimizaciones visuales y de interacción.
 
-## 👨‍💻 Autor
+## Autor
 
 **Manuel Isaac Camaño Díaz**
 
@@ -228,7 +228,7 @@ https://github.com/manuelisaaccamanidiaz-lgtm
 **LinkedIn:**
 https://www.linkedin.com/in/manuel-isaac-camaño-diaz-707006305/
 
-## 📄 Licencia
+## Licencia
 
 Este repositorio no contiene una licencia de software explícita.
 
