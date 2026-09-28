@@ -186,7 +186,8 @@ p {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 var(--container-pad);
+  padding-left: max(var(--container-pad), env(safe-area-inset-left));
+  padding-right: max(var(--container-pad), env(safe-area-inset-right));
 }
 
 /* Ocultar visualmente pero mantener accesible para lectores de pantalla */
@@ -272,7 +273,8 @@ p {
   height: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 var(--container-pad);
+  padding-left: max(var(--container-pad), env(safe-area-inset-left));
+  padding-right: max(var(--container-pad), env(safe-area-inset-right));
 }
 
 /* Logo con iniciales */
@@ -368,6 +370,7 @@ p {
 ================================================================ */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding-top: var(--navbar-height);
@@ -994,6 +997,7 @@ p {
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-default);
     padding: var(--space-4);
+    padding-bottom: max(var(--space-4), env(safe-area-inset-bottom));
     gap: var(--space-2);
     z-index: 99;
   }
@@ -1016,6 +1020,13 @@ p {
   /* Foto más pequeña en móvil */
   .hero__avatar { width: 88px; height: 88px; }
 
+  .hero__content { padding: var(--space-16) 0; }
+  .hero__name,
+  .hero__role,
+  .hero__description { max-width: 100%; overflow-wrap: anywhere; }
+  .hero__role { font-size: var(--text-lg); }
+  .hero__description { font-size: var(--text-base); }
+
   /* Botones en columna en pantallas muy pequeñas */
   .hero__actions { flex-direction: column; align-items: center; }
   .btn { width: 100%; justify-content: center; max-width: 280px; }
@@ -1023,6 +1034,20 @@ p {
   /* Skills: una columna */
   .skills__categories { grid-template-columns: 1fr; }
 
+  .project-card__body { padding: var(--space-4); }
+  .project-card__links { flex-wrap: wrap; }
+  .contact__btn { justify-content: center; }
+
   /* Footer en columna */
   .footer__inner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 380px) {
+  :root { --container-pad: var(--space-3); }
+
+  .hero__name { font-size: var(--text-2xl); }
+  .hero__actions,
+  .contact__links { width: 100%; }
+  .btn,
+  .contact__btn { max-width: none; }
 }

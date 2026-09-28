@@ -215,7 +215,7 @@
       nav: ['Sobre mí', 'Habilidades', 'Proyectos', 'Contacto'],
       greeting: 'Hola, soy',
       rolePrefix: 'Desarrollador ',
-      heroDescription: 'Construyo soluciones que conectan tecnología con problemas reales. Con enfoque en automatización, JavaScript y mucho café. ☕',
+      heroDescription: 'Construyo soluciones que conectan tecnología con problemas reales. Con enfoque en automatización, JavaScript y mucho café. ',
       viewProjects: 'Ver proyectos',
       downloadCv: 'Descargar CV',
       aboutEyebrow: '02 — sobre mí',
